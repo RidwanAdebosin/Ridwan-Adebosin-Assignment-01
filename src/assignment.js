@@ -71,8 +71,13 @@ function countEvenNumbersWithin(destination) {
  */
 const arrayOfNumbers = [11, 23, 27, 35, 9];
 function celsiusToFahrenheit(arrayOfNumbers) {
+    //Create an empty array for the result to be pushed in
     let result = [];
+    //loop over the arrayOfNumbers
     for ( let temp of arrayOfNumbers ) {
+    //Using the Math.trunc to convert the result from been a floating(decimal) numbers to a whole number
+    //Converting the arrayOfNumbers from Celsius to Fahrenheit using the formula
+    //Pushing the result into the empty array created on line 75
         result.push(Math.trunc((temp * 9/5) + 32 ));
     }
 
